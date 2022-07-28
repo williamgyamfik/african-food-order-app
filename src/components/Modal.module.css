@@ -1,0 +1,95 @@
+
+.modal-content {
+  position: fixed;
+  align-self: center;
+  top: 15vh;
+  left: 5%;
+  width: 90%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+  
+}
+
+/* .modal-content li {
+  max-height: 30rem;
+  overflow: scroll;
+} */
+
+.modal-content h2{
+  color: rgb(235, 8, 8);
+  
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-content .close .order{
+  display: flex;
+  justify-content: flex-end;
+  background: rgb(244, 99, 2);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+
+.modal-content img{
+  
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close .order {
+  color: rgb(61, 4, 69);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(43, 38, 38, 0.75);
+}
+
+/* .content {
+  max-height: 30rem;
+  overflow: auto;
+  padding: 0 1rem;
+} */
+
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
